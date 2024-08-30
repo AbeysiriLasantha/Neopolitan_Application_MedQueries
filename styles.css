@@ -1,0 +1,82 @@
+/* Base styles for all viewports */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    background-color:rgb(202, 202, 186);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header h1 {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    background-color:rgb(202, 202, 186);
+}
+
+section {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+/* Responsive Image Containers */
+.pic {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+/* 1025px - 1200px: Desktops, large screens */
+@media (max-width: 2280px) {
+    .pic {
+        margin:20px;
+        background-image: url('./images/winter.jpg');
+        background-color: rgb(103, 103, 178);
+    }
+}
+
+/* 769px - 1024px: Small screens, laptops */
+@media (max-width: 1480px) {
+    .pic {
+        margin:20px;
+        background-image: url('./images/spring.jpg');
+        background-color: rgb(225, 226, 173);
+    }
+}
+
+/* 769px - 1024px: Small screens, laptops */
+@media (max-width: 880px) {
+    .pic {
+        margin:20px;
+        background-image: url('./images/summer.jpg');
+        background-color: rgb(224, 194, 141);
+    }
+}
+
+/* 320px - 480px: Mobile devices */
+@media (max-width: 650px) {
+    .pic {
+        margin:20px;
+        background-image: url('./images/fall.jpg');
+        background-color: rgb(180, 219, 135);
+    }
+}
